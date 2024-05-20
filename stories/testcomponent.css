@@ -1,0 +1,15 @@
+.black {
+    .value {
+        color: black;
+    }
+}
+.blue {
+    .value {
+        color: blue;
+    }
+}
+.red {
+    .value {
+        color: red;
+    }
+}
