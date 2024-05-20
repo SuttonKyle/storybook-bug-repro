@@ -37,8 +37,7 @@ export const TestComponent = {
       <TestComponentWithItems
         variant={args.variant}
         items={[
-          {value: "value 1"},
-          {value: <div>value 2</div>},
+          {value: <div>value 1</div>},
         ]}
       />
     </div>,
