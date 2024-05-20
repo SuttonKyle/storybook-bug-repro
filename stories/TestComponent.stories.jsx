@@ -1,22 +1,10 @@
 import React from 'react';
 import "./testcomponent.css";
 
-const DataList = (props) =>
-  <dl className={props.variant}>
-    {props.children}
-  </dl>;
-
-const DataPoint = (props) => 
-  <div className="value">
-    {props.children}
-  </div>;
-
-
 const TestComponentWithItems = (props) => 
-  <DataList variant={props.variant}>
-    {props.items.map(item => <DataPoint>{item.value}</DataPoint>)}
-  </DataList>
-
+  <div className={props.variant}>
+    <div className="value">{props.item.value}</div>
+  </div>
 
 export default {
   title: "Test Component",
@@ -36,9 +24,7 @@ export const TestComponent = {
     render: (args) => <div>
       <TestComponentWithItems
         variant={args.variant}
-        items={[
-          {value: <div>value 1</div>},
-        ]}
+        item={{value: <div>value 1</div>}}
       />
     </div>,
   };
